@@ -192,13 +192,13 @@ namespace TestApp
         }
 
         /*
-        public static void GetValues(DataSet dataset, string sheetName)
+        public static void getvalues(dataset dataset, string sheetname)
         {
-            foreach (DataRow row in dataset.Tables[sheetName].Rows)
+            foreach (datarow row in dataset.tables[sheetname].rows)
             {
-                foreach (var value in row.ItemArray)
+                foreach (var value in row.itemarray)
                 {
-                    Console.WriteLine("{0}, {1}", value, value.GetType());
+                    console.writeline("{0}, {1}", value, value.gettype());
                 }
             }
         }
