@@ -53,6 +53,7 @@ namespace DisplayChartExcel
         private void button2_Click(object sender, EventArgs e)
         {
             var extension = Path.GetExtension(textBox1.Text).ToLower();
+
             using (var stream = new FileStream(textBox1.Text, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             {
                 var sw = new Stopwatch();
