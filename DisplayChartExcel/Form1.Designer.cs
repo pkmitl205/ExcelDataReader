@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataSet1 = new System.Data.DataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.firstRowNamesCheckBox = new System.Windows.Forms.CheckBox();
-            this.dataSet1 = new System.Data.DataSet();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -53,6 +53,10 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(709, 281);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "NewDataSet";
             // 
             // button1
             // 
@@ -77,17 +81,12 @@
             // firstRowNamesCheckBox
             // 
             this.firstRowNamesCheckBox.AutoSize = true;
-            this.firstRowNamesCheckBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.firstRowNamesCheckBox.Location = new System.Drawing.Point(384, 63);
             this.firstRowNamesCheckBox.Name = "firstRowNamesCheckBox";
             this.firstRowNamesCheckBox.Size = new System.Drawing.Size(176, 17);
             this.firstRowNamesCheckBox.TabIndex = 4;
             this.firstRowNamesCheckBox.Text = "first row contains column names";
             this.firstRowNamesCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "NewDataSet";
             // 
             // statusStrip1
             // 
@@ -128,6 +127,7 @@
             this.sheetCombo.Name = "sheetCombo";
             this.sheetCombo.Size = new System.Drawing.Size(121, 21);
             this.sheetCombo.TabIndex = 7;
+            this.sheetCombo.SelectedIndexChanged += new System.EventHandler(this.sheetCombo_SelectedIndexChanged);
             // 
             // openFileDialog1
             // 

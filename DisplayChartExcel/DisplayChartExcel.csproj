@@ -8,13 +8,14 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>DisplayChartExcel</RootNamespace>
     <AssemblyName>DisplayChartExcel</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -32,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DisplayChartExcel.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,15 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExcelDataSetConfiguration.cs" />
-    <Compile Include="ExcelDataTableConfiguration.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IExcelDataReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -68,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -83,9 +85,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\src\ExcelDataReader.DataSet\ExcelDataReader.DataSet.csproj">
+      <Project>{061F5E1D-23A7-4744-BF2A-54AAFC5EFE70}</Project>
+      <Name>ExcelDataReader.DataSet</Name>
+    </ProjectReference>
     <ProjectReference Include="..\src\ExcelDataReader\ExcelDataReader.csproj">
       <Project>{627CD303-4CE5-4300-8BD1-0FCF143D4874}</Project>
       <Name>ExcelDataReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\test\ExcelDataReader.Net20.Tests\ExcelDataReader.Net20.Tests.csproj">
+      <Project>{c2d80729-09ee-4e17-869d-2c9075e0ed29}</Project>
+      <Name>ExcelDataReader.Net20.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\test\ExcelDataReader.Net45.Tests\ExcelDataReader.Net45.Tests.csproj">
+      <Project>{7abfa914-8980-4630-b7e5-92921e5d897d}</Project>
+      <Name>ExcelDataReader.Net45.Tests</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

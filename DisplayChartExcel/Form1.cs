@@ -114,7 +114,7 @@ namespace DisplayChartExcel
         }
 
 
-        private void SheetComboSelectedIndexChanged(object sender, EventArgs e)
+        private void sheetCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
             SelectTable();
         }
