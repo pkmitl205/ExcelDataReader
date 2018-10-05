@@ -65,7 +65,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(565, 31);
+            this.button1.Location = new System.Drawing.Point(565, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(565, 63);
+            this.button2.Location = new System.Drawing.Point(565, 57);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -86,7 +86,7 @@
             // firstRowNamesCheckBox
             // 
             this.firstRowNamesCheckBox.AutoSize = true;
-            this.firstRowNamesCheckBox.Location = new System.Drawing.Point(369, 63);
+            this.firstRowNamesCheckBox.Location = new System.Drawing.Point(369, 61);
             this.firstRowNamesCheckBox.Name = "firstRowNamesCheckBox";
             this.firstRowNamesCheckBox.Size = new System.Drawing.Size(176, 17);
             this.firstRowNamesCheckBox.TabIndex = 4;
@@ -111,7 +111,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(111, 31);
+            this.textBox1.Location = new System.Drawing.Point(111, 26);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(434, 20);
             this.textBox1.TabIndex = 1;
@@ -119,7 +119,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(473, 95);
+            this.label1.Location = new System.Drawing.Point(473, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 6;
@@ -128,7 +128,7 @@
             // sheetCombo
             // 
             this.sheetCombo.FormattingEnabled = true;
-            this.sheetCombo.Location = new System.Drawing.Point(346, 92);
+            this.sheetCombo.Location = new System.Drawing.Point(346, 90);
             this.sheetCombo.Name = "sheetCombo";
             this.sheetCombo.Size = new System.Drawing.Size(121, 21);
             this.sheetCombo.TabIndex = 7;
